@@ -28,72 +28,71 @@
         </nav>
       <div class="user-blcok">
           <a class="busket" href="#">Корзина</a>
-      </div>
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>      
     </header>
-    <main class="containter">
+    <div class="welcome"><h1>Добро пожаловать в магазин готовых макетов</h1></div>
+    <div class="containter">
       <div class="choice-menu">
-        <div class="cost">
-          <form>
-            <legend>Стоимость:</legend>
-              <input type="range" min="0" max="15000" step="1" value="10000"> 
-          </form>
-          <b>От</b><div class="min-price"></div><b>До</b><div class="max-price"></div>  
-        </div>
-        <div class="type-of-grid">
-          <form>
-            <fieldset>
-              <legend>Сетка:</legend>
-                <label><input type="radio" name="adaptive" checked>Адаптивная</label>
-                <label><input type="radio" name="fixed">Фиксированная</label>
-                <label><input type="radio" name="adaptive">Резиновая</label>
-            </fieldset>
-          </form>  
-        </div>
-        <div class="features">
-          <form>
-            <fieldset>
+        <aside>
+          <fieldset>
+            <form>
+              <legend>Стоимость:</legend>
+                <div class="price-bar"></div>
+                <div class="min-price"></div>
+                <div class="max-price"></div>            
+              <div class="type-of-grid">            
+                <legend>Сетка:</legend>
+                  <label><input type="radio" name="adaptive" checked>Адаптивная</label>
+                  <label><input type="radio" name="fixed">Фиксированная</label>
+                  <label><input type="radio" name="adaptive">Резиновая</label>
+              </div>         
+              <div class="features">
               <legend>Особенности:</legend>
                 <label><input type="checkbox" name="slider" checked>Слайдер</label>
                 <label><input type="checkbox" name="advantage-blcok" >Блок преимуществ</label>
                 <label><input type="checkbox" name="news" checked>Новости</label>
                 <label><input type="checkbox" name="gallery" >Галерея</label>
                 <label><input type="checkbox" name="busket" >Корзина</label>
-            </fieldset>
-          </form>
-        </div>
-          <div class="show-me-btn"><a href="#">Показать</a></div>
+              </div>          
+              <div class="show-me-btn"><a href="#">Показать</a></div>
+            </form>
+          </fieldset>
+        </aside>
       </div>
       <div class="gallery">
-        <b>Сортировать:</b>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По функционалу</a>
-        <div class="down-btn"><img src="http;//placehold.it/20*20"></div>
-        <div class="up-btn"><img src="http;//placehold.it/20*20"></div>
-        <div class="shop-item"><img src="http://placehold.it/150*100"></div>
-        <div class="shop-item"><img src="http://placehold.it/150*100"></div>
-        <div class="shop-item"><img src="http://placehold.it/150*100"></div>
-        <div class="shop-item"><img src="http://placehold.it/150*100"></div>
-        <div class="shop-item"><img src="http://placehold.it/150*100"></div>
-        <div class="shop-item"><img src="http://placehold.it/150*100"></div>
-      </div>
-      <div class="pages">
-       <a href="#">1</a>
-       <a href="#">2</a> 
-       <a href="#">3</a> 
-       <a href="#">Следующая</a> 
-      </div>
-    </main>
-   <footer class="main-footer">
-        <div class="map">
-          <img src="http://placehold.it/150x100">
-            <div class="contakts">
-              <span class="contakts-nerds"><b>Nerds design ctudio</b><br>
+        <div class="sort-by">
+          <b>Сортировать:</b>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+          <div class="down-btn"><a href="#"><img src="http;//placehold.it/20*20"></a></div>
+          <div class="up-btn"><a href="#"><img src="http;//placehold.it/20*20"></a></div>
+        </div>
+        <div class="gallery-projects">
+          <div class="shop-item"><a href="#"><img src="http://placehold.it/150*100"></a></div>
+          <div class="shop-item"><a href="#"><img src="http://placehold.it/150*100"></a></div>
+          <div class="shop-item"><a href="#"><img src="http://placehold.it/150*100"></a></div>
+          <div class="shop-item"><a href="#"><img src="http://placehold.it/150*100"></a></div>
+          <div class="shop-item"><a href="#"><img src="http://placehold.it/150*100"></a></div>
+          <div class="shop-item"><a href="#"><img src="http://placehold.it/150*100"></a></div>
+        </div>
+        <div class="pages">
+          <div class="page-btn"><a href="#">1</a></div>
+          <div class="page-btn"><a href="#">2</a></div> 
+          <div class="page-btn"><a href="#">3</a></div> 
+          <div class="page-btn"><a href="#">Следующая</a></div> 
+        </div>
+     </div>
+     <div class="map">
+       <img src="http://placehold.it/150x100">
+         <div class="contacts">
+           <span class="contacts-nerds"><b>Nerds design ctudio</b><br>
                     191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8<br>
                     Телефон: +7 (812) 275-75-75</span>
-            </div>
-        </div>
+           <div class="write-to-us">Напишите нам</div>
+         </div>
+      </div>
+      <footer class="main-footer">
         <div class="container">
           <section class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -105,6 +104,6 @@
               <p>Скидка 10% для друзей из социальных сетей</p>
             </section>
         </div>
-   </footer>   
+      </footer>
   </body>
 </html>
