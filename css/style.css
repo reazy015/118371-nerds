@@ -1,19 +1,535 @@
-body {
- font-size: 16px;
-  line-height: 22px;
-  color: #283136;
-  font-weight: normal;
-  font-family: "RobotoMedium", Arial, sans-serif;
+body,
+html{
+    min-width: 960px;
+    
+    font-size: 16px;
+    line-height: 22px;
+    color: #313131;
+    font-weight: 500;
+    font-family: "Roboto", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background: #e5e5e5 url("../nerds-index.jpg") no-repeat 50% 3px;*/
+    
+  
 }
 
-h1 {
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-h2 {
-  font-size: 16px;
-  line-height: 22px;
-  color: #283136;
+.main-header {   
+    background-color: #eeeeee;
+    
 }
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-logo {
+    float: left;
+    width: 140px;
+    height: 56px;
+    margin-left: 10px;
+    margin-top: 30px;
+   
+   
+    
+}
+.main-navigation {
+    float: left;
+    width: 400px;
+    margin-left: 180px;
+    padding: 0;
+}
+
+.main-navigation ul {
+    width: 400px;
+    list-style: none;    
+    padding: 0;
+    
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    margin-left: 29px;
+    margin-top: 45px;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 22px;
+    
+    
+}
+
+.main-navigation ul li:first-child{
+    margin-left: 0px;
+}
+
+.main-navigation a {
+    color: #313131;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.user-block {    
+    float: right;    
+    max-width: 100px;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+
+.busket { 
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    color: #313131;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.busket::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    width: 18px;
+    height: 18px;
+    background:  url("/img/icons/icon-basket.png") no-repeat;
+}
+
+.slider {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: px;
+    margin-bottom: 80px;
+    background: #eeeeee ;
+}
+
+.slider-features {
+    float: left;
+    width: 380px;
+    margin-left: 513px;
+    padding-top: 20px;
+
+    
+}
+
+.slider-features h2 {
+    margin: 0;
+    width: 280px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.slider-features p{
+    margin-top: 0px;
+    margin-bottom: 26px;
+}
+
+.features-button {    
+    width: 240px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    
+}
+
+.slider-radio {
+    position: absolute;
+    top: 236px;
+    left: 914px;
+    width: 200px;
+    
+}
+
+.slider-radio a {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls .active {
+    background: #c1c1c1;
+}
+
+.features-button a{    
+    color: white;
+    text-decoration: none;
+}
+
+.slider-image{
+    float: right;
+    width: 340px;
+    margin-right: 510px;
+    margin-bottom: 60px;
+    
+}
+
+
+
+
+.services-form {
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+}
+
+.services-form:last-child {
+    margin-right: 0px;
+}
+
+.services {
+    width: 880px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+}
+
+.services-img {
+    height: 125px;
+    margin-bottom: 20px;
+}
+
+.services-name {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.services-form p{
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 27px;
+}
+
+.order-btn {
+    width: 140px;
+        
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px
+}
+
+.order-btn a{
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.red {
+    background: #fb565a;
+}
+.yellow {
+    background: #efc84a;
+}
+.green {
+    background: #00ca74;
+}
+
+.line-through {
+    height: 2px;
+    background: #f8f8f8;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    margin-right:  10px;
+}
+
+.about-us {
+    width: 880px;    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 48px;
+   
+}
+
+.left-column {
+    font-size: 16px;    
+    float: left;
+    width: 620px;    
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    
+}
+
+.left-column h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.left-column p{
+    margin-bottom: 43px;
+}
+
+.orders-type {    
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.orders {
+    margin: 0;
+    
+}
+
+.orders li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 22px;    
+}
+
+.orders li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 10px;
+    left: -40px;
+    width: 25px;
+    height: 2px;
+    background: #f4a3a5;
+}
+
+.right-column {
+    float: right;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.about-us-logo {
+    width: 187px;    
+    margin: 0 auto;
+    margin-bottom: 22px;
+}
+
+.since {
+    position: relative;
+    width: 86px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 65px;;
+}
+
+.since::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 10px;
+    left: -75px;
+    width: 65px;
+    height: 2px;
+    background: black;
+}
+
+.since::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 10px;
+    left: 96px;
+    width: 65px;
+    height: 2px;
+    background: black;
+}
+
+.work-style {
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.right-column li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 22px;
+}
+
+.right-column li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    top: 10px;
+    left: -40px;
+    background: #f4a3a5;
+}
+
+.second {
+    margin-bottom: 45px;
+}
+
+.projects {
+    display: inline-block;
+    vertical-align: middle;    
+    margin-right: 100px;
+    margin-left: 22px;
+    opacity: 0.3;
+}
+
+
+.projects:nth-child(2){
+    margin-right: 100px;
+}
+.projects:last-child {
+    margin-right: 10px;
+}
+
+.our-projects {
+    margin-bottom: 25px;
+}
+
+.third {
+    margin-bottom: 85px;  
+}
+
+.map {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;    
+}
+
+.contacts {
+    position: absolute;
+    bottom: 65px;
+    left: 159px;
+    width: 250px;
+    background: #ffffff;
+   
+}
+.contacts-nerds {
+    width: 172px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;    
+}
+
+.address {
+    width: 200px;
+    margin-left: 20px;    
+    margin-bottom: 25px;
+    color: #afafaf;
+}
+
+.phone {
+    width: 170px;
+    color: #afafaf;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.write-to-us {
+    width: 205px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #fb565a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.write-to-us a {
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+}
+
+.map-mark {
+    position: absolute;    
+    top: 113px;
+    right: 131px;
+    
+}
+
+.map-mark-logo {
+    position: absolute;
+    top: 167px;
+    right: 240px;
+    
+}
+
+
+.footer-socials {
+    float: left;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.footer-socials a {   
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-right: 23px;   
+    background: #e1e1e1 url("../img/icons/sprites.png") no-repeat center;
+}
+
+.footer-socials a:last-child {
+    margin-right: 0;
+}
+
+.footer-socials .social-btn-vk {
+    background-position: -145px 5px;
+    
+}
+
+.footer-socials .social-btn-fb {
+    background-position: -35px 0px;
+}
+
+.footer-socials .social-btn-inst {
+    background-position: -100px 0px;    
+}
+
+
+.slogan {
+    float: right;
+    width: 550px;
+    margin-right: 20px;
+}
+
+.slogan-freinds {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.slogan-discount {
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+    

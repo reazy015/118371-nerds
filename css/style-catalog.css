@@ -1,0 +1,468 @@
+html,
+body {
+    min-width: 960px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #283136;
+    margin: 0;
+    padding: 0;
+    /background: #e5e5e5 url("../nerds-catalog.jpg") no-repeat 50% 3px;*/
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 65px;
+    background-color: ;
+    margin-bottom: 50px;
+    
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-logo {
+    float: left;
+    width: 140px;
+    height: 56px;
+    margin-left: 10px;
+    margin-top: 30px;
+   
+   
+    
+}
+.main-navigation {
+    float: left;
+    width: 400px;
+    margin-left: 180px;
+    padding: 0;
+}
+
+.main-navigation ul {
+    width: 400px;
+    list-style: none;    
+    padding: 0;
+    
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    margin-left: 29px;
+    margin-top: 45px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 22px;
+    
+    
+}
+
+.main-navigation ul li:first-child{
+    margin-left: 0px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.user-block {    
+    float: right;    
+    max-width: 100px;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+
+.busket { 
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.busket::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    width: 18px;
+    height: 18px;
+    background:  url("/img/icons/icon-basket.png") no-repeat;
+}
+
+.welcome h1 {   
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: -10px;
+    margin-bottom: 155px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.choice-menu {
+    float: left;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.cost {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: -35px;
+}
+
+.range-filter {
+    width: 240px;
+    margin: 50px auto; 
+    margin-bottom: 50px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+    left: 20px;
+}
+
+.range-controls .toggle-max {
+    left: 145px;
+}
+
+.price-controls {
+    font-size: 0;   
+  
+}
+
+.price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+}
+
+.max-price {
+    text-align: right;
+}
+
+.price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 8px 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f1f1f1;
+}
+
+.price-controls span {
+    text-transform: uppercase;
+}
+
+.type-of-grid {
+    margin-bottom: 45px;
+}
+
+.type-of-grid .sort-type{
+    text-transform: uppercase;
+    font-size: 18px;    
+}
+
+.type-of-grid ul {
+    padding: 0;
+}
+
+.type-of-grid  ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.type-of-grid ul li input{
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+.features {
+    margin-bottom: 60px;
+}
+
+.features .sort-type {
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+.features ul{
+    padding: 0;
+}
+
+.features ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.features ul li input {
+    margin-right: 20px;
+}
+
+.show-btn {    
+    width: 155px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.gallery {
+    float: right;
+    width: 580px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    padding: 0;
+}
+
+.select-type {
+    float: left;
+}
+
+.sort-header {
+    margin-bottom: 21px;
+}
+
+.select-type a{
+    display: inline-block;
+    margin-right: 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    color:black;
+    opacity: 0.3;
+    border-bottom: 2px dotted green;
+}
+
+.sort-by {
+    display: inline-block;
+    margin-right: 41px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase
+}
+
+.sort-buttons {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.down-btn,
+.up-btn {
+    display: inline-block;
+}
+
+
+.shop-item {
+    display: inline-block;
+    width: 240px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    vertical-align: top;
+}
+
+.shop-item:nth-child(even) {
+    margin-right: 10px;
+}
+
+
+.pages ul{    
+    padding: 0;
+}
+
+.pages ul li {
+    display: inline-block;
+    padding: 10px 17px;
+    text-align: center;
+    background-color: #f1f1f1;    
+}
+
+.pages ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.map {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;    
+}
+
+.pages .active {
+    background: white;
+    border: 1px solid #eeeeee;
+}
+
+.contacts {
+    position: absolute;
+    bottom: 45px;
+    left: 159px;
+    width: 250px;
+    background: #ffffff;
+   
+}
+.contacts-nerds {
+    width: 172px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;    
+}
+
+.address {
+    width: 200px;
+    margin-left: 20px;    
+    margin-bottom: 25px;
+    color: #afafaf;
+}
+
+.phone {
+    width: 170px;
+    color: #afafaf;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.write-to-us {
+    width: 205px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #fb565a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.write-to-us a {
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+}
+
+.map-mark {
+    position: absolute;    
+    top: 113px;
+    right: 131px;
+    
+}
+
+.map-mark-logo {
+    position: absolute;
+    top: 167px;
+    right: 240px;
+    
+}
+
+
+.footer-socials {
+    float: left;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.footer-socials a {   
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-right: 23px;   
+    background: #e1e1e1 url("../img/icons/sprites.png") no-repeat center;
+}
+
+.footer-socials a:last-child {
+    margin-right: 0;
+}
+
+.footer-socials .social-btn-vk {
+    background-position: -145px 5px;
+    
+}
+
+.footer-socials .social-btn-fb {
+    background-position: -35px 0px;
+}
+
+.footer-socials .social-btn-inst {
+    background-position: -100px 0px;    
+}
+
+
+.slogan {
+    float: right;
+    width: 550px;
+    margin-right: 20px;
+}
+
+.slogan-freinds {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.slogan-discount {
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+    
