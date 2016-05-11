@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-catalog.css">
+    <link rel="stylesheet" href="css/normilize.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <title>Дизайн студия Nerd's</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="header-logo"><img src="https://placehold.it//150*100" width="140px" height="55px"></div>      
+      <div class="container clearfix">
+        <div class="header-logo"><img src="../img/logo.png" width="140px" height="56px" alt="logo"></div>      
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -17,51 +19,57 @@
             <li><a href="#">Контакты</a></li>  
           </ul>
         </nav>
-        <div class="user-blcok">
+        <div class="user-block">
             <a class="busket" href="#">Корзина</a>
         </div>
       </div>
-    </header>
-    <div class="containter">
-      <div class="welcome"><h1>Добро пожаловать в магазин готовых макетов</h1></div>    
-      <div class="choice-menu">       
-        <div class="cost">Стоимость:</div>
-        <div class="slider">
-          <div class="slider-box">
-            <div class="slider-min"></div>
-            <div class="slider-max"></div>
-          </div> 
-        </div>
-        <div class="price-range">
-          <span>От</span>
-          <div class="price-min"></div>
-          <span>До</span>
-          <div class="price-max"></div>
-        </div>
-        <form>
-          <div class="type-of-grid">            
-            <div class="grid">Сетка:</div>
-            <label><input type="radio" name="adaptive" checked>Адаптивная</label>
-            <label><input type="radio" name="fixed">Фиксированная</label>
-            <label><input type="radio" name="adaptive">Резиновая</label>
+    </header>    
+    <div class="welcome"><h1>Добро пожаловать в магазин<br> готовых макетов</h1></div>     <div class="container clearfix">
+      <form action="" method="get">
+        <div class="choice-menu">
+          <div class="cost">Стоимость:</div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+              <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price"><span>От</span><input name="min-price" type="text" value="0"></label>
+              <label class="max-price"><span>До</span><input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>   
+          <div class="type-of-grid">           
+            <div class="sort-type">Сетка:</div>
+            <ul>
+              <li><label><input type="radio" name="adaptive-grid" checked>Адаптивная</label></li>
+              <li><label><input type="radio" name="fixed-grid">Фиксированная</label></li>
+              <li><label><input type="radio" name="adaptive-grid">Резиновая</label></li>
+            </ul>
           </div>         
           <div class="features">
-          <legend>Особенности:</legend>
-            <label><input type="checkbox" name="slider" checked>Слайдер</label>
-            <label><input type="checkbox" name="advantage-blcok" >Блок преимуществ</label>
-            <label><input type="checkbox" name="news" checked>Новости</label>
-            <label><input type="checkbox" name="gallery" >Галерея</label>
-            <label><input type="checkbox" name="busket" >Корзина</label>
+            <div class="sort-type">Особенности:</div>
+            <ul>
+              <li><label><input type="checkbox" name="slider" checked>Слайдер</label></li>
+              <li><label><input type="checkbox" name="advantage-blcok" >Блок преимуществ</label></li>
+              <li><label><input type="checkbox" name="news" checked>Новости</label></li>
+              <li><label><input type="checkbox" name="gallery" >Галерея</label></li>
+              <li><label><input type="checkbox" name="busket" >Корзина</label></li>
+            </ul>
           </div>          
-          <button type="submit" name="show-me-btn">Показать</button>
-        </form>          
-      </div>
+          <button  class="show-btn" type="submit" name="show-me-btn">Показать</button>
+        </div>          
+      </form>
       <div class="gallery">
-        <div class="sort-by">
-          <div class="sort-by">Сортировать:</div>
-          <a href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По функционалу</a>
+        <div class="sort-header clearfix">
+          <div class="select-type">
+            <div class="sort-by">Сортировать:</div>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По функционалу</a>
+          </div>
           <div class="sort-buttons">
             <div class="down-btn"><a href="#"><img src="http;//placehold.it/20*20" width="12px" height="10px"></a></div>
             <div class="up-btn"><a href="#"><img src="http;//placehold.it/20*20" width="12px" height="10px"></a></div>
@@ -69,27 +77,27 @@
         </div>
         <div class="gallery-projects">
           <div class="shop-item">
-            <a href="#"><img src="http://placehold.it/150*100" width="240px" height="270px" alt="project-img"></a>
+            <a href="#"><img src="/img/catalog/catalog-1.png" width="240px" height="270px" alt="project-img"></a>
           </div>
           <div class="shop-item">
-            <a href="#"><img src="http://placehold.it/150*100" width="240px" height="270px" alt="project-img"></a>
+            <a href="#"><img src="img/catalog/catalog-2.png" width="240px" height="270px" alt="project-img"></a>
           </div>
           <div class="shop-item">
-            <a href="#"><img src="http://placehold.it/150*100" width="240px" height="270px" alt="project-img"></a>
+            <a href="#"><img src="img/catalog/catalog-3.png" width="240px" height="270px" alt="project-img"></a>
           </div>
           <div class="shop-item">
-            <a href="#"><img src="http://placehold.it/150*100" width="240px" height="270px" alt="project-img"></a>
+            <a href="#"><img src="img/catalog/catalog-4.png" width="240px" height="270px" alt="project-img"></a>
           </div>
           <div class="shop-item">
-            <a href="#"><img src="http://placehold.it/150*100" width="240px" height="270px" alt="project-img"></a>
+            <a href="#"><img src="img/catalog/catalog-5.png" width="240px" height="270px" alt="project-img"></a>
           </div>
           <div class="shop-item">
-            <a href="#"><img src="http://placehold.it/150*100" width="240px" height="270px" alt="project-img"></a>
+            <a href="#"><img src="img/catalog/catalog-6.png" width="240px" height="270px" alt="project-img"></a>
           </div>
         </div>
         <div class="pages">
           <ul>
-            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">1</a></li>
             <li><a href="#">2</a></li> 
             <li><a href="#">3</a></li> 
             <li><a href="#">Следующая</a></li>
@@ -98,7 +106,7 @@
       </div>
     </div>
     <div class="map">
-     <img src="http://placehold.it/150x100" alt="map">
+     <img src="/img/map.jpg" width="1200px" height="416px" alt="map">
        <div class="container">
          <div class="contacts">
            <div class="contacts-nerds">Nerds design ctudio</div>
@@ -106,14 +114,16 @@
            <div class="phone">Телефон: +7 (812) 275-75-75</div>
            <div class="write-to-us"><a href="#">Напишите нам</a></div>
          </div>
+         <div class="map-mark"><img src="/img/map-mark.png" width="231px" height="190px" alt="map-mark"></div>
+         <div class="map-mark-logo"><img src="img/logo.png" width="92px" height="37px"></div>
        </div>
    </div>
    <footer>
      <div class="container">
-       <section class="footer-social">
-         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+       <section class="footer-socials">
+         <a class="social-btn social-btn-vk" href="#"></a>
+         <a class="social-btn social-btn-fb" href="#"></a>
+         <a class="social-btn social-btn-inst" href="#"></a>
        </section>
        <section class="slogan">
          <p class="slogan-freinds">Давайте дружить, это выгодно!</p>

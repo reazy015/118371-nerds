@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normilize.css">
+    <link rel="stylesheet" href="css/style.css">    
     <title>Дизайн студия Nerd's</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="header-logo"><img src="https://placehold.it//" width="140px" height="60px" alt="logo"></div>      
+      <div class="container clearfix">
+        <div class="header-logo"><img src="../img/logo.png" width="140px" height="56px" alt="logo"></div>      
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -17,99 +19,103 @@
             <li><a href="#">Контакты</a></li>  
           </ul>
         </nav>
-        <div class="user-blcok">
+        <div class="user-block">
           <a class="busket" href="#">Корзина</a>
         </div>
       </div>
-    </header>
+    </header>    
+    <div class="slider clearfix">
+      <div class="slider-features">
+        <h2>Долго, дорого, скрупулезно.</h2>
+        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+        <div class="features-button">
+          <a href="#">Узнать больше</a>
+        </div>
+      </div>       
+      <div class="slider-image">
+        <img src="/img/slider-img.png" width="340px" height="235px" alt="slider-picture">   
+      </div>   
+      <div class="slider-radio">
+        <a class="active" href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </div>
     <div class="container">
-      <div class="slider">
-       <div class="slider-features">
-         <h2>Долго, дорого, скрупулезно.</h2>
-         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-         <div class="features-button">
-           <a href="#">Узнать больше</a>
-         </div>
-       </div>       
-       <div class="slider-image">
-         <img src="https://placehold.it/" width="350px" height="232px">   
-       </div>
-       <div class="slider-btn">
-         <a href="#"></a>
-         <a href="#"></a>
-         <a href="#"></a>
-       </div>
-     </div>  
-     <div class="services">
-       <div class="services-form">
-         <div class="services-img"><img src="http://placehold.it/150*100" width="240px" height="125px"></div>
-         <div class="services-name">Веб-сайты</div>
-         <p>Мир никогда не будет прежним после того как увидит ваш сатй!</p>
-         <div class="order-btn"><a href="#">Заказать</a></div>
-       </div>
-       <div class="services-form">
-         <div class="services-img"><img src="http://placehold.it/150*100" width="240px" height="125px"></div>
-         <div class="services-name">Приложения</div>
-         <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-         <div class="order-btn"><a href="#">Заказать</a></div>
-       </div>
-       <div class="services-form">
-         <div class="services-img"><img src="http://placehold.it/150*100" width="240px" height="125px"></div>
-         <div class="services-name">Презентации</div>
-         <p>Вы даже не подозреваете насколько вы изумительны!</p>
-         <div class="order-btn"><a href="#">Заказать</a></div>
-       </div>        
-     </div>
-     <div class="about-us">
-       <div class="left-column"> 
-         <h2>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
-         <p>Исповедуем принципы минимализма и частоты. Ставим математический расчет выше креатива. Работаем не покаладая рук, как роботы.</p>
-         <div class="orders-type">Выполняем заказы на разработку:</div>
-         <ul class="orders">
-           <li>Веб-сайтов любой сложности</li>
-           <li>Мобильных приложений для iOS и Android</li>
-           <li>Слайдшоу и видео для корпоративных призентаций</li>
-         </ul>
-       </div>
-       <div class="right-column">
-         <div class="about-us-logo"><img src="http://placehold.it/" width="" height=""></div>
-           <p class="work-style">Как мы работаем:</p>
-           <ul>
-             <li>С самоотдачей 146%</li>
-             <li>Соблюдая сроки на 100%</li>
-             <li>По предоплает 50%</li>
-           </ul>
-       </div>
-       <div class="our-projects">
-         <div class="projects"><img src="https://placehold.it/150*100" width="220px" height="170px"></div>
-         <div class="projects"><img src="https://placehold.it/150*100" width="220px" height="170px"></div>  
-         <div class="projects"><img src="https://placehold.it/150*100" width="220px" height="170px"></div>  
-       </div>
-     </div>
-   </div>
-   <div class="map">
-     <img src="http://placehold.it/150x100" alt="map">
-       <div class="container">
-         <div class="contacts">
-           <div class="contacts-nerds">Nerds design ctudio</div>
-           <div class="address">191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</div>
-           <div class="phone">Телефон: +7 (812) 275-75-75</div>
-           <div class="write-to-us"><a href="#">Напишите нам</a></div>
-         </div>
-       </div>
-   </div>
-   <footer>
-     <div class="container">
-       <section class="footer-social">
-         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-       </section>
-       <section class="slogan">
-         <p class="slogan-freinds">Давайте дружить, это выгодно!</p>
-         <p class="slogan-discount">Скидка 10% для друзей из социальных сетей</p>
-       </section>
-     </div>
-   </footer> 
+      <div class="services clearfix">
+        <div class="services-form">
+          <div class="services-img"><img src="/img/services/web-cites.png" width="240px" height="125px" alt="service-img"></div>
+          <div class="services-name">Веб-сайты</div>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <div class="order-btn red"><a href="#">Заказать</a></div>
+        </div>
+        <div class="services-form">
+          <div class="services-img"><img src="/img/services/apps.png" width="240px" height="125px" alt="service-img"></div>
+          <div class="services-name">Приложения</div>
+          <p>Покорите топ-10 приложений<br>в AppStore и GooglePlay</p>
+          <div class="order-btn green"><a href="#">Заказать</a></div>
+        </div>
+        <div class="services-form">
+          <div class="services-img"><img src="img/services/presentation.png" width="240px" height="125px" alt="service-img"></div>
+          <div class="services-name">Презентации</div>
+          <p>Вы даже не подозреваете насколько вы изумительны!</p>
+          <div class="order-btn yellow"><a href="#">Заказать</a></div>
+        </div>        
+      </div>
+      <div class="line-through"></div>
+      <div class="about-us clearfix">
+        <div class="left-column"> 
+          <h2>Мы-маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и частоты. Ставим математический<br> расчет выше креатива. Работаем не покаладая рук, как роботы.</p>
+          <div class="orders-type">Выполняем заказы на разработку:</div>
+          <ul class="orders">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных призентаций</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <div class="about-us-logo"><img src="/img/logo.png" width="187px" height="75px" alt="logo"></div>
+          <div class="since">Since 2004</div>
+          <p class="work-style">Как мы работаем:</p>
+          <ul>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплает 50%</li>
+          </ul>
+        </div>
+      </div>
+      <div class="line-through second"></div>
+      <div class="our-projects clearfix">
+        <div class="projects"><img src="/img/our-projects/Vector%20Smart%20Object.png" width="190px" height="37px" alt="glukhanko-              logo"></div>
+        <div class="projects"><img src="/img/our-projects/htmlacademy.png" width="199px" height="68px" alt="htmlacademy-logo"></div>  
+        <div class="projects"><img src="/img/our-projects/borodinski.png" width="209px" height="90px" alt="borodinski-logo"></div>  
+      </div>
+      <div class="line-through third"></div>
+    </div>
+    <div class="map">
+      <img src="img/map.jpg" width="1200px" height="416px" alt="карта">      
+      <div class="contacts">
+        <div class="contacts-nerds">Nёrds design studio</div>
+        <div class="address">191186, Санкт-Петербург,<br> ул.Б. Конюшенная, д. 19/8</div>
+        <div class="phone">тел.+7 (812) 275-75-75</div>
+        <div class="write-to-us"><a href="#">Напишите нам</a></div>
+      </div>
+      <div class="map-mark"><img src="/img/map-mark.png" width="231px" height="190px" alt="map-mark"></div>
+      <div class="map-mark-logo"><img src="img/logo.png" width="92px" height="37px"></div>
+    </div>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <div class="footer-socials">
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+        </div>
+        <div class="slogan">
+          <p class="slogan-freinds">Давайте дружить, это выгодно!</p>
+          <p class="slogan-discount">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </div>
+    </footer> 
   </body>
 </html>
