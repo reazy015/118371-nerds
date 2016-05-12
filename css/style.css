@@ -9,7 +9,7 @@ html{
     font-family: "Roboto", "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    /*background: #e5e5e5 url("../nerds-index.jpg") no-repeat 50% 3px;*/
+    /background: #e5e5e5 url("../nerds-index.jpg") no-repeat 50% 3px;*/
     
   
 }
@@ -22,6 +22,7 @@ html{
 
 .main-header {   
     background-color: #eeeeee;
+    
     
 }
 
@@ -36,7 +37,7 @@ html{
     width: 140px;
     height: 56px;
     margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 27px;
    
    
     
@@ -44,30 +45,33 @@ html{
 .main-navigation {
     float: left;
     width: 400px;
-    margin-left: 180px;
+    margin-left: 182px;
     padding: 0;
 }
 
 .main-navigation ul {
     width: 400px;
-    list-style: none;    
+    list-style: none;
     padding: 0;
+    
     
 }
 
 .main-navigation ul li {
-    display: inline-block;
-    margin-left: 29px;
-    margin-top: 45px;
-    vertical-align: top;
-    font-size: 16px;
-    line-height: 22px;
-    
-    
+    display: inline-block;    
+    vertical-align: top; 
+    margin-top: 38px;    
 }
 
-.main-navigation ul li:first-child{
-    margin-left: 0px;
+.main-navigation ul li a{
+    display: inline-block;
+    margin-right: 41px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.main-navigation ul li:nth-child(4) a{   
+    margin-right: 0px;
 }
 
 .main-navigation a {
@@ -79,14 +83,14 @@ html{
 .user-block {    
     float: right;    
     max-width: 100px;
-    margin-left: 70px;
-    margin-top: 60px;
+    margin-right: 10px;
+    margin-top: 57px;
 }
 
 .busket { 
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #313131;
     vertical-align: top;
@@ -98,36 +102,46 @@ html{
     content: "";
     position: absolute;
     top: 3px;
-    left: -20px;
+    left: -26px;
     width: 18px;
     height: 18px;
     background:  url("/img/icons/icon-basket.png") no-repeat;
 }
 
 .slider {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: px;
-    margin-bottom: 80px;
-    background: #eeeeee ;
+    position: relative;    
+    margin-bottom: 78px;
+    background: #eeeeee;
 }
 
+.slider input{
+    opacity: 0;
+}
+
+.slider-window {    
+    width: 900px;    
+    margin: 0 auto;
+    
+}
+.slide{
+    height: 316px;
+    
+}
 .slider-features {
     float: left;
-    width: 380px;
-    margin-left: 513px;
-    padding-top: 20px;
+    width: 580px;
+    margin-left: 10px;
+    padding-top: 36px;
 
     
 }
 
 .slider-features h2 {
-    margin: 0;
-    width: 280px;
+    margin: 0;    
     font-size: 36px;
     font-weight: bold;
     line-height: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     
 }
 
@@ -146,33 +160,7 @@ html{
     background-color: #fb565a;
     border-radius: 5px;
     padding-top: 10px;
-    padding-bottom: 10px;
-   
-    
-}
-
-.slider-radio {
-    position: absolute;
-    top: 236px;
-    left: 914px;
-    width: 200px;
-    
-}
-
-.slider-radio a {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 3px;
-    background: white;
-    border: 3px solid white;
-    vertical-align: top;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider-controls .active {
-    background: #c1c1c1;
+    padding-bottom: 10px;    
 }
 
 .features-button a{    
@@ -180,16 +168,68 @@ html{
     text-decoration: none;
 }
 
-.slider-image{
-    float: right;
-    width: 340px;
-    margin-right: 510px;
-    margin-bottom: 60px;
+.slider-radio {
+    position: absolute;
+    top: 231px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    margin-left: -107px;
     
 }
 
+.slider-radio label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 5px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-radio label[for="btn-1"],
+#btn-2:checked ~ .slider-radio label[for="btn-2"],
+#btn-3:checked ~ .slider-radio label[for="btn-3"] { 
+    background:#c1c1c1;
+}
 
 
+.slider-window .slide:nth-child(1){
+    background-image: url("/img/slider-images/slider-img.png");
+    background-repeat: no-repeat;
+    background-position: 551px 16px;   
+}
+
+.slider-window .slide:nth-child(2){
+    background-image: url("/img/slider-images/slider-image3.png");
+    background-repeat: no-repeat;
+    background-position: 551px 0px;
+}
+
+.slider-window .slide:nth-child(3){
+    background-image: url("/img/slider-images/slider-image2.png");
+    background-repeat: no-repeat;
+    background-position: 625px 33px;
+}
+
+.slide{
+    display: none;
+}
+
+#btn-1:checked ~ .slider-window .slide:nth-child(1) { 
+    display: block;
+}
+
+#btn-2:checked ~ .slider-window .slide:nth-child(2) { 
+    display: block;
+}
+
+#btn-3:checked ~ .slider-window .slide:nth-child(3) { 
+    display: block;
+}
 
 .services-form {
     float: left;
@@ -210,7 +250,7 @@ html{
 
 .services-img {
     height: 125px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .services-name {
@@ -223,7 +263,7 @@ html{
 .services-form p{
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
 }
 
 .order-btn {
@@ -299,13 +339,15 @@ html{
 
 .orders {
     margin: 0;
+    padding: 0;
     
 }
 
 .orders li{
     position: relative;
     list-style: none;
-    margin-bottom: 22px;    
+    margin-bottom: 22px;
+    margin-left: 35px;
 }
 
 .orders li::before {
@@ -313,7 +355,7 @@ html{
     content: "";
     display: block;
     top: 10px;
-    left: -40px;
+    left: -35px;
     width: 25px;
     height: 2px;
     background: #f4a3a5;
@@ -329,6 +371,7 @@ html{
     width: 187px;    
     margin: 0 auto;
     margin-bottom: 22px;
+    margin-left: 30px;
 }
 
 .since {
@@ -366,10 +409,13 @@ html{
     margin-bottom: 21px;
 }
 
+
+
 .right-column li{
     position: relative;
     list-style: none;
     margin-bottom: 22px;
+    margin-left: -3px;
 }
 
 .right-column li::before {
@@ -379,7 +425,7 @@ html{
     width: 25px;
     height: 2px;
     top: 10px;
-    left: -40px;
+    left: -37px;
     background: #f4a3a5;
 }
 
@@ -404,7 +450,11 @@ html{
 }
 
 .our-projects {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+}
+
+.our-projects :nth-child(1) {
+    margin-top: -3px;    
 }
 
 .third {
@@ -415,12 +465,12 @@ html{
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 80px;    
+    margin-bottom: 70px;    
 }
 
 .contacts {
     position: absolute;
-    bottom: 65px;
+    top: 88px;
     left: 159px;
     width: 250px;
     background: #ffffff;
@@ -428,32 +478,33 @@ html{
 }
 .contacts-nerds {
     width: 172px;
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 29px;
+    margin-bottom: 14px;
     text-transform: uppercase;    
 }
 
 .address {
     width: 200px;
-    margin-left: 20px;    
-    margin-bottom: 25px;
+    margin-left: 22px;    
+    margin-bottom: 21px;
     color: #afafaf;
+    line-height: 20px;
 }
 
 .phone {
     width: 170px;
     color: #afafaf;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 25px;
 }
 
 .write-to-us {
     width: 205px;
-    margin-left: 20px;
+    margin-left: 22px;
     margin-bottom: 25px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     background: #fb565a;
     border-radius: 5px;
     text-align: center;
@@ -477,7 +528,7 @@ html{
 .map-mark-logo {
     position: absolute;
     top: 167px;
-    right: 240px;
+    right: 232px;
     
 }
 
