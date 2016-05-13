@@ -17,103 +17,93 @@ body {
     clear: both;
 }
 
-.main-header {
-    margin-bottom: 65px;
+.main-header {   
     background-color: ;
-    margin-bottom: 50px;
-    
+    margin-bottom: 0px;
 }
-
 .container {
-    width: 900px;
+    width: 880px;
     margin: 0 auto;
     padding: 0 10px;
 }
-
 .header-logo {
     float: left;
     width: 140px;
-    height: 56px;
-    margin-left: 10px;
-    margin-top: 30px;
-   
-   
-    
+    height: 56px;    
+    margin-top: 27px;  
 }
 .main-navigation {
     float: left;
     width: 400px;
-    margin-left: 180px;
+    margin-left: 182px;
     padding: 0;
 }
-
 .main-navigation ul {
     width: 400px;
-    list-style: none;    
-    padding: 0;
-    
+    list-style: none;
+    padding: 0;   
 }
-
 .main-navigation ul li {
+    display: inline-block;    
+    vertical-align: top; 
+    margin-top: 38px;    
+}
+.main-navigation ul li a{
     display: inline-block;
-    margin-left: 29px;
-    margin-top: 45px;
-    vertical-align: top;
+    margin-right: 41px;
     font-size: 14px;
-    line-height: 22px;
-    
-    
+    line-height: 30px;
 }
-
-.main-navigation ul li:first-child{
-    margin-left: 0px;
+.main-navigation ul li:nth-child(4) a{   
+    margin-right: 0px;
 }
-
 .main-navigation a {
+    color: #313131;
     text-decoration: none;
     text-transform: uppercase;
 }
-
 .user-block {    
     float: right;    
-    max-width: 100px;
-    margin-left: 70px;
-    margin-top: 60px;
+    max-width: 100px;    
+    margin-top: 56px;
 }
-
 .busket { 
     position: relative;
     display: inline-block;
     font-size: 14px;
     line-height: 22px;
+    color: #313131;
     vertical-align: top;
     text-decoration: none;
     text-transform: uppercase
 }
-
 .busket::before {
     content: "";
     position: absolute;
     top: 3px;
-    left: -20px;
+    left: -26px;
     width: 18px;
     height: 18px;
     background:  url("/img/icons/icon-basket.png") no-repeat;
 }
+.welcome {
+    margin-top: 50px;
+    margin-bottom: 162px;
+    
+}
 
 .welcome h1 {   
     font-size: 40px;
-    line-height: 50px;
-    margin-left: -10px;
-    margin-bottom: 155px;
+    line-height: 45px;    
     text-align: center;
     text-transform: uppercase;
 }
-
+.main-form{
+    
+}
 .choice-menu {
     float: left;
     width: 240px;
-    margin-left: 10px;
 }
 
 .cost {
@@ -121,13 +111,15 @@ body {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-    margin-bottom: -35px;
+    margin-left: -10px;
+    margin-bottom: -37px;
 }
 
 .range-filter {
     width: 240px;
     margin: 50px auto; 
     margin-bottom: 50px;
+    margin-left: -10px;
 }
 
 .range-controls {
@@ -170,7 +162,7 @@ body {
 }
 
 .range-controls .toggle-max {
-    left: 145px;
+    left: 160px;
 }
 
 .price-controls {
@@ -208,6 +200,7 @@ body {
 
 .type-of-grid {
     margin-bottom: 45px;
+    margin-left: -10px;
 }
 
 .type-of-grid .sort-type{
@@ -232,6 +225,7 @@ body {
 
 .features {
     margin-bottom: 60px;
+    margin-left: -10px;
 }
 
 .features .sort-type {
@@ -271,12 +265,12 @@ body {
 }
 
 .sort-header {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .select-type a{
     display: inline-block;
-    margin-right: 48px;
+    margin-right: 42px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -288,7 +282,9 @@ body {
 
 .sort-by {
     display: inline-block;
-    margin-right: 41px;
+    margin-top: 5px;
+    margin-right: 35px;
+    margin-left: 18px;
     font-size: 12px;
     font-weight: bold;
     line-height: 18px;
@@ -296,27 +292,32 @@ body {
 }
 
 .sort-buttons {
-    display: inline-block;
-    margin-left: 40px;
-    margin-right: 10px;
+    float: right;
+    margin-left: 50px;
 }
 
 .down-btn,
 .up-btn {
     display: inline-block;
 }
-
-
+.gallery-projects{
+    float: right;
+    width: 560px;
+    font-size: 0px;
+   
+}
 .shop-item {
     display: inline-block;
     width: 240px;
+    height: 270px;
     margin-right: 80px;
     margin-bottom: 80px;
     vertical-align: top;
+    
 }
 
 .shop-item:nth-child(even) {
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 
