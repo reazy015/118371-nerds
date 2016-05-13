@@ -1,6 +1,6 @@
 html,
 body {
-    min-width: 960px;
+    min-width: 900px;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -18,8 +18,7 @@ body {
 }
 
 .main-header {   
-    background-color: ;
-    margin-bottom: 0px;
+    background-color: #eeeeee;
 }
 .container {
     width: 880px;
@@ -62,6 +61,12 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
+.main-navigation a:hover{
+    color: #fb565a;
+}
+.main-navigation a:active{
+    color:#bfbfbf;
+}
 .user-block {    
     float: right;    
     max-width: 100px;    
@@ -84,22 +89,42 @@ body {
     left: -26px;
     width: 18px;
     height: 18px;
-    background:  url("/img/icons/icon-basket.png") no-repeat;
+    background:  url("../img/icons/icon-basket.png") no-repeat;
+}
+.busket:hover{
+    color:#fb565a;
+}
+.busket:active{
+    color: #bfbfbf;
+}
+.busket:hover::before{
+    background: transparent  url(../img/icons/.icon-basket-hover.png) no-repeat; 
+}
+.main-navigation  .active{
+    position: relative;
+}
+.main-header .active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    height: 2px;
+    background-color: #fb565a;
 }
 .welcome {
-    margin-top: 50px;
-    margin-bottom: 162px;
-    
+    padding-top: 20px;
+    margin-bottom: 68px;
+    text-align: center;   
+    background: #eeeeee;  
 }
-
-.welcome h1 {   
+.welcome h1 {
+    padding-bottom: 92px;
     font-size: 40px;
-    line-height: 45px;    
+    line-height: normal;
+    font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-}
-.main-form{
-    
 }
 .choice-menu {
     float: left;
@@ -256,7 +281,7 @@ body {
     float: right;
     width: 580px;
     margin-right: 10px;
-    margin-bottom: 70px;
+    
     padding: 0;
 }
 
@@ -279,7 +304,14 @@ body {
     opacity: 0.3;
     border-bottom: 2px dotted green;
 }
-
+.select-type a:hover{
+    opacity: 1;
+    border-bottom: 2px solid #00ca74;
+}
+.select-type a:active{
+    opacity: 1;
+    border-bottom: none;
+}
 .sort-by {
     display: inline-block;
     margin-top: 5px;
@@ -299,52 +331,122 @@ body {
 .down-btn,
 .up-btn {
     display: inline-block;
+    opacity: 0.2;
+}
+.down-btn:active{
+    opacity: 1;
+}
+.up-btn:active{
+    opacity: 1;
 }
 .gallery-projects{
     float: right;
     width: 560px;
     font-size: 0px;
+    margin-bottom: 80px;
    
 }
 .shop-item {
+    position: relative;
     display: inline-block;
     width: 240px;
     height: 270px;
     margin-right: 80px;
     margin-bottom: 80px;
     vertical-align: top;
-    
 }
-
+.shop-item::before{
+    display: block;
+    content: "";
+    width: 240px;
+    height: 30px;
+    background: url("../img/catalog/browser-panel.gif") no-repeat;
+    background-size: 100%;
+    opacity: 0.2;
+}
+.shop-item:hover::before{
+    opacity: 1;
+}
 .shop-item:nth-child(even) {
     margin-right: 0px;
 }
-
-
-.pages ul{    
-    padding: 0;
+.shop-item h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1;
 }
-
+.shop-item p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.shop-item-btn {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: #fb565a;
+    border-radius: 5px;
+}
+.shop-item-info{
+    display: none;
+}
+.shop-item:hover .shop-item-info{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    top: 20%;
+    left: 20px;
+    text-align: center;
+    background-color: white;
+}
+.pages ul{
+    float: left;
+    padding: 0;
+}  
 .pages ul li {
     display: inline-block;
-    padding: 10px 17px;
     text-align: center;
-    background-color: #f1f1f1;    
+    margin-right: 10px;
 }
 
 .pages ul li a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
+    padding: 7px 15px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    background: #eeeeee;
     color: black;
 }
-
+.pages ul li a:hover {
+    background: #e5e5e5;
+}
+pages ul li a:active {
+    background: #d5d5d5;
+    border-top: 3px solid #b5b5b5;
+}
+.pages  a .active {
+    background: white;
+}
 .map {
     position: relative;
-    width: 1200px;
+    height: 416px;
     margin: 0 auto;
-    margin-bottom: 80px;    
+    margin-bottom: 80px; 
+    background: #ffffff url("../img/map.jpg") no-repeat 50% 50%;
 }
 
 .pages .active {
@@ -353,66 +455,61 @@ body {
 }
 
 .contacts {
-    position: absolute;
-    bottom: 45px;
-    left: 159px;
+    float: left;
+    margin-top: 90px;
     width: 250px;
-    background: #ffffff;
-   
+    height: 240px;
+    background: #ffffff; 
 }
 .contacts-nerds {
     width: 172px;
     margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 17px;
     text-transform: uppercase;    
 }
-
 .address {
     width: 200px;
-    margin-left: 20px;    
-    margin-bottom: 25px;
+    margin-left: 22px;    
+    margin-bottom: 19px;
     color: #afafaf;
+    line-height: 20px;
 }
-
 .phone {
     width: 170px;
     color: #afafaf;
-    margin-left: 20px;
-    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-bottom: 27px;
 }
-
 .write-to-us {
+    display: block;
     width: 205px;
-    margin-left: 20px;
+    margin-left: 22px;
     margin-bottom: 25px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     background: #fb565a;
     border-radius: 5px;
     text-align: center;
-}
-
-.write-to-us a {
     font-size: 12px;
     font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;    
     color: white;
 }
-
-.map-mark {
-    position: absolute;    
-    top: 113px;
-    right: 131px;
-    
+.write-to-us:hover{
+    background-color: #d6494d;
 }
-
-.map-mark-logo {
-    position: absolute;
-    top: 167px;
-    right: 240px;
-    
+.write-to-us:active{
+    background-color: #b63538;
+    border-top: 2px solid #a63033;
+}
+.mark-block {   
+    float: right;    
+    margin-top: 120px;    
+}
+.map-mark{
+    margin-top: -10px;
 }
 
 

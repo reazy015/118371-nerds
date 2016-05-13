@@ -1,6 +1,6 @@
 body,
 html{
-    min-width: 960px;    
+    min-width: 900px;    
     font-size: 16px;
     line-height: 22px;
     color: #313131;
@@ -59,6 +59,12 @@ html{
     text-decoration: none;
     text-transform: uppercase;
 }
+.main-navigation a:hover{
+    color: #fb565a;
+}
+.main-navigation a:active{
+    color:#bfbfbf;
+}
 .user-block {    
     float: right;    
     max-width: 100px;    
@@ -81,7 +87,16 @@ html{
     left: -26px;
     width: 18px;
     height: 18px;
-    background:  url("/img/icons/icon-basket.png") no-repeat;
+    background: transparent  url("../img/icons/icon-basket.png") no-repeat;
+}
+.busket:hover{
+    color:#fb565a;
+}
+.busket:active{
+    color: #bfbfbf;
+}
+.busket:hover::before{
+    background: transparent  url(../img/icons/.icon-basket-hover.png) no-repeat; 
 }
 .slider {
     position: relative;    
@@ -93,11 +108,12 @@ html{
 }
 .slider-window {    
     width: 880px;
-    height: 350px;
+   
     margin: 0 auto;
     padding: 0 10px;  
 }
-.slide{      
+.slide{ 
+    height: 315px;
 }
 .slider-features {
     float: left;
@@ -115,21 +131,28 @@ html{
     margin-top: 0px;
     margin-bottom: 26px;
 }
-.features-button {    
+.features-button {
+    display: block;
     width: 240px;
     font-size: 12px;
     font-weight: normal;
     line-height: 18px;
     text-align: center;
+    text-decoration: none;
+    color: white;
     text-transform: uppercase;
     background-color: #fb565a;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;    
 }
-.features-button a{    
-    color: white;
-    text-decoration: none;
+.features-button:hover{
+    background-color: #d6494d;
+}
+.features-button:active{
+      background-color: #b63538;
+      border-top: 2px solid #9b2d30;
+      padding-top: 8px;
 }
 .slider-radio {
     position: absolute;
@@ -151,19 +174,20 @@ html{
     border-radius: 50%;
     cursor: pointer;
 }
-.first-slide {
+.first-slide{
     float: right;    
-    margin-top: 14px;  
+    margin-top: 15px;
 }
-.second-slide {
-    float: right; 
-    margin-right: 10px
+.second-slide{
+    float: right;
+    margin-top: -5px;
 }
 .third-slide{
     float: right;
+    margin-right: 35px;
     margin-top: 32px;
-    margin-right: 35px; 
 }
+
 #btn-1:checked ~ .slider-radio label[for="btn-1"],
 #btn-2:checked ~ .slider-radio label[for="btn-2"],
 #btn-3:checked ~ .slider-radio label[for="btn-3"] { 
@@ -186,7 +210,7 @@ html{
     width: 240px;
     margin-right: 80px;
 }
-.services-form:last-child {
+.services-form:nth-child(3) {
     margin-right: 0px;
 }
 .services {
@@ -209,19 +233,15 @@ html{
     margin-bottom: 26px;
 }
 .order-btn {
+    display: block;
     width: 140px;
-        
     border-radius: 5px;
     text-align: center;
     padding-top: 7px;
-    padding-bottom: 7px
-}
-
-.order-btn a{
+    padding-bottom: 7px;
     font-size: 12px;
     font-weight: normal;
     color: white;
-    line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -233,6 +253,27 @@ html{
 }
 .green {
     background: #00ca74;
+}
+.red:hover{
+    background:  #d6494d;
+}
+.yellow:hover{
+    background: #d6ae2c ;
+}
+.green:hover{
+    background: #01a25e ;
+}
+.red:active{
+     background-color: #b63538;
+     border-top: 2px solid #9b2d30;
+}
+.yellow:active{
+    background-color: #c09b24;
+    border-top: 2px solid #c1a64e;
+}
+.green:active{
+    background-color: #009053;
+    border-top: 2px solid #339a6e;
 }
 .line-through {
     height: 2px;
@@ -362,16 +403,23 @@ html{
 .our-projects .projects:nth-child(2){
     margin-right: 123px;
 }
+.our-projects .projects:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.our-projects .projects:active{
+    opacity: 1;
+    cursor: pointer;
+}
 .third {
     margin-bottom: 85px;  
 }
 .map {
-    position: relative;
-    width: 100%;
+    position: relative;   
     height: 416px;
     margin: 0 auto;
     margin-bottom: 75px;
-    background: #ffffff url("/img/map.jpg") no-repeat 50% 50%;
+    background: #ffffff url("../img/map.jpg") no-repeat 50% 50%;
 }
 .contacts {
     float: left;
@@ -401,6 +449,7 @@ html{
     margin-bottom: 27px;
 }
 .write-to-us {
+    display: block;
     width: 205px;
     margin-left: 22px;
     margin-bottom: 25px;
@@ -409,18 +458,22 @@ html{
     background: #fb565a;
     border-radius: 5px;
     text-align: center;
-}
-.write-to-us a {
     font-size: 12px;
     font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;    
     color: white;
 }
+.write-to-us:hover{
+    background-color: #d6494d;
+}
+.write-to-us:active{
+    background-color: #b63538;
+    border-top: 2px solid #a63033;
+}
 .mark-block {   
     float: right;    
-    margin-top: 120px;
-    margin-right: -30px;
+    margin-top: 120px;    
 }
 .map-mark{
     margin-top: -10px;
@@ -448,6 +501,14 @@ html{
 }
 .footer-socials .social-btn-inst {
     background-position: -100px 0px;    
+}
+.social-btn:hover{
+    background-color: #fb565a;
+}
+social-btn:active{
+    background-color: #d6494d;
+    box-shadow: 0 5px #98d9be inset;
+    padding-top: 5px;
 }
 .slogan {
     float: right;
