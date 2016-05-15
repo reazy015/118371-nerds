@@ -525,4 +525,476 @@ social-btn:active{
     margin-top: 10px;
     margin-bottom: 80px;
 }
+/* Стилизация формы связи 
+        Начало*/
+/*.contacts-form {
+    width: 632px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 1px 60px,
+                0px -1px 60px,
+                1px 0px 60px,
+                -1px 0px 60px;
+   
+}*/
+.modal-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom:  0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    backgroun-color: rgba(0,0,0,0.65);
+    cursor: default;
+}
+.modal-window:target {
+    display: block;
+    pointer-events: auto;
+}
+.contacts-form {
+    width: 632px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 1px 60px,
+                0px -1px 60px,
+                1px 0px 60px,
+                -1px 0px 60px;
+}
+.name,
+.e-mail {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 56px;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    border: none;
+    
+}
+.e-mail{
+    margin-right: 0;
+    margin-left: 0;
+}
+.letter {
+    float: left;
+    border: none;
+    padding: 0;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.e-mail input[type="text"],
+.name input[type="text"]{
+    width: 217px;
+    height: 38px;
+    border-radius: 5px;
+    border: 2px solid #eeeeee;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.letter textarea{
+    width: 460px;
+    height: 114px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.contacts-form button{
+    width: 460px;
+    height: 38px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #fb565a;
+}
+.esc-button{
+    display: block;
+    position: relative;
+    float: right;
+    width: 41px;
+    height: 41px;
+    margin-right: 6px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background: #fb565a;
+    cursor: pointer;
+}
+.esc-button::before {
+    position: absolute;
+    display: block;
+    top: 17.9px;
+    left: 5px;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: rotate(45deg)
+}
+.esc-button::after{
+   position: absolute;
+    display: block;
+    top: 17.9px;
+    left: 5px;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: rotate(-46deg) 
+}
+.esc-button:hover::before{
+    background-color: #34495e;
+}
+.esc-button:hover::after {
+    background: #34495e;
+}
+.esc-button:hover {
+    background-color: #ffffff;
+}
+.esc-button:active .modal-window {
+    display: none;
+}
+/* стили для страницы каталога */
+.welcome {
+    padding-top: 20px;
+    margin-bottom: 68px;
+    text-align: center;   
+    background: #eeeeee;  
+}
+.welcome h1 {
+    padding-bottom: 92px;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+.choice-menu {
+    float: left;
+    width: 240px;
+}
+
+.cost {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-left: -10px;
+    margin-bottom: -37px;
+}
+
+.range-filter {
+    width: 240px;
+    margin: 50px auto; 
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+    left: 20px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;   
+  
+}
+
+.price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+}
+
+.max-price {
+    text-align: right;
+}
+
+.price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 8px 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f1f1f1;
+}
+
+.price-controls span {
+    text-transform: uppercase;
+}
+
+.type-of-grid {
+    margin-bottom: 45px;
+    margin-left: -10px;
+}
+
+.type-of-grid .sort-type{
+    text-transform: uppercase;
+    font-size: 18px;    
+}
+
+.type-of-grid ul {
+    padding: 0;
+}
+
+.type-of-grid  ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.type-of-grid ul li input{
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+.features {
+    margin-bottom: 60px;
+    margin-left: -10px;
+}
+
+.features .sort-type {
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+.features ul{
+    padding: 0;
+}
+
+.features ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.features ul li input {
+    margin-right: 20px;
+}
+
+.show-btn {    
+    width: 155px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.gallery {
+    float: right;
+    width: 580px;
+    margin-right: 10px;
+    
+    padding: 0;
+}
+
+.select-type {
+    float: left;
+}
+
+.sort-header {
+    margin-bottom: 20px;
+}
+
+.select-type a{
+    display: inline-block;
+    margin-right: 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    color:black;
+    opacity: 0.3;
+    border-bottom: 2px dotted green;
+}
+.select-type a:hover{
+    opacity: 1;
+    border-bottom: 2px solid #00ca74;
+}
+.select-type a:active{
+    opacity: 1;
+    border-bottom: none;
+}
+.sort-by {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 35px;
+    margin-left: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase
+}
+
+.sort-buttons {
+    float: right;
+    margin-left: 50px;
+}
+
+.down-btn,
+.up-btn {
+    display: inline-block;
+    opacity: 0.2;
+}
+.down-btn:active{
+    opacity: 1;
+}
+.up-btn:active{
+    opacity: 1;
+}
+.gallery-projects{
+    float: right;
+    width: 560px;
+    font-size: 0px;
+    margin-bottom: 80px;
+   
+}
+.shop-item {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 270px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    vertical-align: top;
+}
+.shop-item::before{
+    display: block;
+    content: "";
+    width: 240px;
+    height: 30px;
+    background: url("../img/catalog/browser-panel.gif") no-repeat;
+    background-size: 100%;
+    opacity: 0.2;
+}
+.shop-item:hover::before{
+    opacity: 1;
+}
+.shop-item:nth-child(even) {
+    margin-right: 0px;
+}
+.shop-item h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1;
+}
+.shop-item p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.shop-item-btn {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: #fb565a;
+    border-radius: 5px;
+}
+.shop-item-info{
+    display: none;
+}
+.shop-item:hover .shop-item-info{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    top: 20%;
+    left: 20px;
+    text-align: center;
+    background-color: white;
+}
+.pages ul{
+    float: left;
+    padding: 0;
+}  
+.pages ul li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.pages ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 15px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    background: #eeeeee;
+    color: black;
+}
+.pages ul li a:hover {
+    background: #e5e5e5;
+}
+pages ul li a:active {
+    background: #d5d5d5;
+    border-top: 3px solid #b5b5b5;
+}
+.pages  a .active {
+    background: white;
+}
+.pages .active {
+    background: white;
+    border: 1px solid #eeeeee;
+}
+
+
+
     

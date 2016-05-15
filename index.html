@@ -15,7 +15,7 @@
           <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>  
           </ul>
         </nav>
@@ -124,12 +124,36 @@
           <div class="contacts-nerds">Nёrds design studio</div>
           <div class="address">191186, Санкт-Петербург,<br> ул.Б. Конюшенная, д. 19/8</div>
           <div class="phone">тел.+7 (812) 275-75-75</div>
-          <a class="write-to-us" href="#">Напишите нам</a>
+          <a class="write-to-us" href="#open-contacts-form">Напишите нам</a>
         </div>
         <div class="mark-block">
           <div class="map-mark"><img src="img/map-mark.png" width="231" height="190" alt="map-mark"></div>    
         </div>       
       </div>
+        <!-- Форма для отправки письма 
+                    Начало-->
+      <div class="modal-window" id="open-contacts-form">
+        <div class="contacts-form clearfix">
+          <a class="esc-button" href="index.html"></a>
+          <form  class="clearfix" action="someaction.php" method="post">
+            <fieldset class="name">
+              <legend>Ваше имя:</legend>
+              <input type="text" name="login" placeholder="Представьтесь, пожалуйста">
+            </fieldset>
+            <fieldset class="e-mail">
+              <legend>Ваш e-mail:</legend>
+              <input type="text" name="e-mail" placeholder="Для отправки ответа">
+            </fieldset>
+            <fieldset class="letter">
+              <legend>Текст письма:</legend>
+              <textarea placeholder="В свободной форме"></textarea>
+            </fieldset>
+            <button type="submit" name="send-letter">Отправить</button>
+          </form>
+      </div>
+    </div>
+        <!-- Форма для отправки письма
+                    Конец -->
     </div>
     <footer class="main-footer">
       <div class="container clearfix">
