@@ -15,7 +15,7 @@
           <ul>
             <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a class="active" href="">Магазин</a></li>
+            <li><a class="active-page" href="">Магазин</a></li>
             <li><a href="#">Контакты</a></li>  
           </ul>
         </nav>
@@ -72,8 +72,10 @@
             <a href="#">По функционалу</a>
           </div>
           <div class="sort-buttons">
-            <div class="down-btn"><a href="#"><img src="img/icons/icon-down.gif" width="11" height="10" alt="down-btn"></a></div>
-            <div class="up-btn"><a href="#"><img src="img/icons/icon-up.gif" width="11" height="10" alt="up-btn"></a></div>
+            <ul class="sorting-list">
+              <li class="down-btn"><a href="#"></a></li>
+              <li class="up-btn"><a href="#"></a></li>
+            </ul> 
           </div>
         </div>
         <div class="gallery-projects">
@@ -127,7 +129,7 @@
           </div>
           <div class="pages">
             <ul>
-              <li><a class="active" href="#">1</a></li>
+              <li><a class="active-item-page" href="#">1</a></li>
               <li><a href="#">2</a></li> 
               <li><a href="#">3</a></li> 
               <li><a href="#">Следующая</a></li>
@@ -143,12 +145,36 @@
           <div class="contacts-nerds">Nerds design ctudio</div>
           <div class="address">191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</div>
           <div class="phone">Телефон: +7 (812) 275-75-75</div>
-          <a class="write-to-us" href="#">Напишите нам</a>
+          <a class="write-to-us" href="#open-contacts-form">Напишите нам</a>
         </div>
         <div class="mark-block">
           <div class="map-mark"><img src="img/map-mark.png" width="231" height="190" alt="map-mark"></div>
         </div>
       </div>
+      <!-- Форма для отправки письма 
+                    Начало-->
+      <div class="modal-window" id="open-contacts-form">
+        <div class="contacts-form clearfix">
+          <a class="esc-button" href="index.html"></a>
+          <form  class="clearfix" action="someaction.php" method="post">
+            <fieldset class="name">
+              <legend>Ваше имя:</legend>
+              <input type="text" name="login" placeholder="Представьтесь, пожалуйста">
+            </fieldset>
+            <fieldset class="e-mail">
+              <legend>Ваш e-mail:</legend>
+              <input type="text" name="e-mail" placeholder="Для отправки ответа">
+            </fieldset>
+            <fieldset class="letter">
+              <legend>Текст письма:</legend>
+              <textarea placeholder="В свободной форме"></textarea>
+            </fieldset>
+            <button type="submit" name="send-letter">Отправить</button>
+          </form>
+        </div>
+      </div>
+        <!-- Форма для отправки письма
+                    Конец -->  
    </div>
    <footer>
      <div class="container">

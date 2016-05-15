@@ -8,6 +8,7 @@ html{
     font-family: "Roboto", "Arial", sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     /background: #e5e5e5 url("../nerds-index.jpg") no-repeat 50% 3px;*/  
 }
 .clearfix::after {
@@ -65,6 +66,14 @@ html{
 .main-navigation a:active{
     color:#bfbfbf;
 }
+.main-navigation .active-page,
+.main-navigation .active-page:hover,
+.main-navigation .active-page:active {
+    border-bottom: 2px solid #fb565a;
+    color: #000000;
+    opacity: 1;
+    pointer-events: none;
+}
 .user-block {    
     float: right;    
     max-width: 100px;    
@@ -96,7 +105,11 @@ html{
     color: #bfbfbf;
 }
 .busket:hover::before{
-    background: transparent  url(../img/icons/.icon-basket-hover.png) no-repeat; 
+    background: transparent  url("../img/icons/icon-basket-hover.png") no-repeat; 
+}
+.busket:active::before {
+    background: transparent url("../img/icons/icon-basket.png") no-repeat;
+    opacity: 0.4;
 }
 .slider {
     position: relative;    
@@ -505,10 +518,9 @@ html{
 .social-btn:hover{
     background-color: #fb565a;
 }
-social-btn:active{
+.social-btn:active{
     background-color: #d6494d;
-    box-shadow: 0 5px #98d9be inset;
-    padding-top: 5px;
+    box-shadow: inset 0 3px #b63e42;
 }
 .slogan {
     float: right;
@@ -527,22 +539,13 @@ social-btn:active{
 }
 /* Стилизация формы связи 
         Начало*/
-/*.contacts-form {
-    width: 632px;
-    margin: 0 auto;
-    background: #ffffff;
-    box-shadow: 0px 1px 60px,
-                0px -1px 60px,
-                1px 0px 60px,
-                -1px 0px 60px;
-   
-}*/
+
 .modal-window {
     position: fixed;
     top: 0;
-    right: 0;
-    bottom:  0;
+    bottom:  0p;
     left: 0;
+    right: 0;
     z-index: 10;
     display: none;
     backgroun-color: rgba(0,0,0,0.65);
@@ -821,9 +824,28 @@ social-btn:active{
 }
 
 .show-btn {    
-    width: 155px;
-    border-radius: 5px;
+    border: 0px;
+    border-style: none;
+    outline: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
     text-transform: uppercase;
+    width: 156px;
+    height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.show-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.show-btn:active {
+    box-shadow: inset 0 3px #b5b5b5;
+    background-color: #d5d5d5;
 }
 
 .gallery {
@@ -874,20 +896,65 @@ social-btn:active{
 
 .sort-buttons {
     float: right;
-    margin-left: 50px;
 }
 
-.down-btn,
-.up-btn {
+.sorting-list {
+    position: relative;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.sorting-list li {
     display: inline-block;
-    opacity: 0.2;
+    vertical-align: top;
+    margin-right: 13px;
 }
-.down-btn:active{
-    opacity: 1;
+
+.add-sorting-list li:last-child {
+    margin-right: 0;
 }
-.up-btn:active{
-    opacity: 1;
+
+.down-btn a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 3px; 
+    left: 2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #00ca74;
 }
+
+.down-btn a:hover::after {
+    border-top: 10px solid #b5b5b5;
+}
+
+.down-btn a:active::after {
+    border-top: 10px solid #000000;
+}
+
+.up-btn a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 9px;
+    right: 1px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #c1c1c1;
+}
+
+.up-btn a:hover::after {
+    border-bottom: 10px solid #b5b5b5;
+}
+
+.up-btn a:active::after {
+    border-bottom: 10px solid #000000;
+}
+
 .gallery-projects{
     float: right;
     width: 560px;
@@ -958,41 +1025,64 @@ social-btn:active{
     text-align: center;
     background-color: white;
 }
+.shop-item-btn:hover{
+    background-color: #d6494d;
+}
+
+.shop-item-btn:active {
+    background-color: #b63538;
+    box-shadow: inset 0 3px #9b2d30;
+}
+.pages{
+    font-size: 0;
+}
 .pages ul{
-    float: left;
     padding: 0;
-}  
-.pages ul li {
+}
+.pages li{
     display: inline-block;
+    vertical-align: top;
     text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
     margin-right: 10px;
 }
 
-.pages ul li a {
+.pages li:last-child {
+     width: 140px;
+}
+
+.pages a{
     display: block;
-    text-decoration: none;
-    text-transform: uppercase;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
     font-size: 12px;
-    font-weight: bold;
-    padding: 7px 15px;
-    border: 2px solid #eeeeee;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #f1f1f1;
     border-radius: 5px;
-    background: #eeeeee;
-    color: black;
+    padding: 10px 15px;
 }
-.pages ul li a:hover {
-    background: #e5e5e5;
+
+.pages .active-item-page,
+.pages .active-item-page:hover,
+.pages .active-item-page:active {
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    box-shadow: none;
+    pointer-events: none;
+    padding: 8px 14px;
 }
-pages ul li a:active {
-    background: #d5d5d5;
-    border-top: 3px solid #b5b5b5;
+
+.pages a:hover {
+    background-color: #e5e5e5;
 }
-.pages  a .active {
-    background: white;
-}
-.pages .active {
-    background: white;
-    border: 1px solid #eeeeee;
+
+.pages a:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px #b5b5b5;
 }
 
 
