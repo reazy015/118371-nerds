@@ -431,13 +431,20 @@ html{
     margin-bottom: 75px;
     background: #ffffff url("../img/map.jpg") no-repeat 50% 50%;
 }
+.map-container {
+    position: absolute;
+    width: 880px;
+    padding: 0 10px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 .contacts {
     float: left;
     margin-top: 90px;
     width: 206px;
     padding-left: 23px;
     padding-right: 23px;
-    height: 240px;
     background: #ffffff; 
 }
 .contacts-nerds {
