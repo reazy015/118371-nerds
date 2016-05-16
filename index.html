@@ -132,9 +132,9 @@
       </div>
         <!-- Форма для отправки письма 
                     Начало-->
-      <div class="modal-window" id="open-contacts-form">
+      <div class="modal-window">
         <div class="contacts-form clearfix">
-          <a class="esc-button" href="index.html"></a>
+          <div class="esc-button"></div>
           <form  class="clearfix" action="someaction.php" method="post">
             <fieldset class="name">
               <legend>Ваше имя:</legend>
@@ -150,8 +150,8 @@
             </fieldset>
             <button type="submit" name="send-letter">Отправить</button>
           </form>
+        </div>
       </div>
-    </div>
         <!-- Форма для отправки письма
                     Конец -->
     </div>
@@ -167,6 +167,20 @@
           <p class="slogan-discount">Скидка 10% для друзей из социальных сетей</p>
         </div>
       </div>
-    </footer> 
+    </footer>
+    <script>
+      var open = document.querySelector(".write-to-us");
+      var modal = document.querySelector(".modal-window");
+      var close = document.querySelector(".esc-button");
+        
+        open.addEventListener("click", function(event) {
+            event.preventDefault();
+            modal.classList.add("modal-window-show");});
+        
+        close.addEventListener("click", function(event) {
+            event.preventDefault();
+            modal.classList.remove("modal-window-show");});
+            
+    </script>
   </body>
 </html>
