@@ -37,7 +37,6 @@ html{
     padding: 0;
 }
 .main-navigation ul {
-    width: 400px;
     list-style: none;
     padding: 0;   
 }
@@ -56,7 +55,7 @@ html{
     margin-right: 0px;
 }
 .main-navigation a {
-    color: #313131;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -173,8 +172,7 @@ html{
     left: 50%;
     width: 200px;
     text-align: center;
-    margin-left: -107px;
-    
+    margin-left: -107px; 
 }
 .slider-radio label {
     display: inline-block;
@@ -200,7 +198,6 @@ html{
     margin-right: 35px;
     margin-top: 32px;
 }
-
 #btn-1:checked ~ .slider-radio label[for="btn-1"],
 #btn-2:checked ~ .slider-radio label[for="btn-2"],
 #btn-3:checked ~ .slider-radio label[for="btn-3"] { 
@@ -277,16 +274,16 @@ html{
     background: #01a25e ;
 }
 .red:active{
-     background-color: #b63538;
-     border-top: 2px solid #9b2d30;
+    background-color: #b63538;
+    box-shadow: inset 0 3px #9b2d30;
 }
 .yellow:active{
     background-color: #c09b24;
-    border-top: 2px solid #c1a64e;
+    box-shadow: inset 0 3px #c1a64e;
 }
 .green:active{
     background-color: #009053;
-    border-top: 2px solid #339a6e;
+    box-shadow: inset 0 3px #339a6e;
 }
 .line-through {
     height: 2px;
@@ -482,14 +479,14 @@ html{
 }
 .write-to-us:active{
     background-color: #b63538;
-    border-top: 2px solid #a63033;
+    box-shadow: inset 0 3px #9b2d30;
 }
 .mark-block {   
     float: right;    
     margin-top: 120px;    
 }
 .map-mark{
-    margin-top: -10px;
+    margin-top: 10px;
 }
 .footer-socials {
     float: left;
@@ -539,16 +536,14 @@ html{
 }
 /* Стилизация формы связи 
         Начало*/
-
 .modal-window {
-    position: fixed;
     top: 0;
     bottom:  0p;
     left: 0;
     right: 0;
     z-index: 10;
     display: none;
-    backgroun-color: rgba(0,0,0,0.65);
+    backgroun-color: #eeeeee;
     cursor: default;
 }
 .modal-window:target {
@@ -556,19 +551,17 @@ html{
     pointer-events: auto;
 }
 .contacts-form {
-    width: 632px;
+    width: 630px;
     margin: 0 auto;
     background: #ffffff;
-    box-shadow: 0px 1px 60px,
-                0px -1px 60px,
-                1px 0px 60px,
-                -1px 0px 60px;
+    box-shadow: 0 20px 40px 15px rgba(0, 0, 0, 0.2);
+   
 }
 .name,
 .e-mail {
     display: inline-block;
     padding: 0px;
-    margin-top: 56px;
+    margin-top: 54px;
     margin-right: 20px;
     margin-left: 80px;
     margin-bottom: 20px;
@@ -584,7 +577,7 @@ html{
     border: none;
     padding: 0;
     margin-left: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 .e-mail input[type="text"],
 .name input[type="text"]{
@@ -597,7 +590,7 @@ html{
 }
 .letter textarea{
     width: 460px;
-    height: 114px;
+    height: 100px;
     border: 2px solid #eeeeee;
     border-radius: 5px;
     font-size: 12px;
@@ -682,7 +675,6 @@ html{
     float: left;
     width: 240px;
 }
-
 .cost {
     text-transform: uppercase;
     font-size: 18px;
@@ -691,14 +683,12 @@ html{
     margin-left: -10px;
     margin-bottom: -37px;
 }
-
 .range-filter {
     width: 240px;
     margin: 50px auto; 
     margin-bottom: 50px;
     margin-left: -10px;
 }
-
 .range-controls {
     position: relative;
     height: 41px;
@@ -709,18 +699,15 @@ html{
     border-radius: 5px;
     background: #f1f1f1;
 }
-
 .range-controls .scale {
     height: 2px;
     background: #d7dcde;
 }
-
 .range-controls .bar {
     width: 70%;
     height: 2px;
     background: #00ca74;
 }
-
 .range-controls .toggle {
     position: absolute;
     top: 30px;
@@ -733,30 +720,23 @@ html{
     background: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
-
 .range-controls .toggle-min {
     left: 20px;
 }
-
 .range-controls .toggle-max {
     left: 160px;
 }
-
 .price-controls {
     font-size: 0;   
-  
 }
-
 .price-controls label {
     font-size: 16px;
     display: inline-block;
     width: 50%;
 }
-
 .max-price {
     text-align: right;
 }
-
 .price-controls input {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
@@ -770,59 +750,47 @@ html{
     outline: none;
     background: #f1f1f1;
 }
-
 .price-controls span {
     text-transform: uppercase;
 }
-
 .type-of-grid {
     margin-bottom: 45px;
     margin-left: -10px;
 }
-
 .type-of-grid .sort-type{
     text-transform: uppercase;
     font-size: 18px;    
 }
-
 .type-of-grid ul {
     padding: 0;
 }
-
 .type-of-grid  ul li{
     list-style: none;
     margin-bottom: 20px;
     margin-left: 20px;
 }
-
 .type-of-grid ul li input{
     margin-left: -15px;
     margin-right: 15px;
 }
-
 .features {
     margin-bottom: 60px;
     margin-left: -10px;
 }
-
 .features .sort-type {
     font-size: 18px;
     text-transform: uppercase
 }
-
 .features ul{
     padding: 0;
 }
-
 .features ul li{
     list-style: none;
     margin-bottom: 20px;
 }
-
 .features ul li input {
     margin-right: 20px;
 }
-
 .show-btn {    
     border: 0px;
     border-style: none;
@@ -842,12 +810,10 @@ html{
 .show-btn:hover {
     background-color: #e5e5e5;
 }
-
 .show-btn:active {
     box-shadow: inset 0 3px #b5b5b5;
     background-color: #d5d5d5;
 }
-
 .gallery {
     float: right;
     width: 580px;
@@ -855,15 +821,12 @@ html{
     
     padding: 0;
 }
-
 .select-type {
     float: left;
 }
-
 .sort-header {
     margin-bottom: 20px;
 }
-
 .select-type a{
     display: inline-block;
     margin-right: 42px;
@@ -877,7 +840,7 @@ html{
 }
 .select-type a:hover{
     opacity: 1;
-    border-bottom: 2px solid #00ca74;
+    border-bottom: 1px solid #00ca74;
 }
 .select-type a:active{
     opacity: 1;
@@ -893,28 +856,23 @@ html{
     line-height: 18px;
     text-transform: uppercase
 }
-
 .sort-buttons {
     float: right;
 }
-
 .sorting-list {
     position: relative;
     font-size: 0;
     padding: 0;
     margin: 0;
 }
-
 .sorting-list li {
     display: inline-block;
     vertical-align: top;
     margin-right: 13px;
 }
-
 .add-sorting-list li:last-child {
     margin-right: 0;
 }
-
 .down-btn a::after {
     position: absolute;
     content: "";
@@ -926,15 +884,12 @@ html{
     border-right: 5px solid transparent;
     border-top: 10px solid #00ca74;
 }
-
 .down-btn a:hover::after {
     border-top: 10px solid #b5b5b5;
 }
-
 .down-btn a:active::after {
     border-top: 10px solid #000000;
 }
-
 .up-btn a::after {
     position: absolute;
     content: "";
@@ -946,21 +901,17 @@ html{
     border-right: 5px solid transparent;
     border-bottom: 10px solid #c1c1c1;
 }
-
 .up-btn a:hover::after {
     border-bottom: 10px solid #b5b5b5;
 }
-
 .up-btn a:active::after {
     border-bottom: 10px solid #000000;
 }
-
 .gallery-projects{
     float: right;
     width: 560px;
     font-size: 0px;
     margin-bottom: 80px;
-   
 }
 .shop-item {
     position: relative;
@@ -1028,7 +979,6 @@ html{
 .shop-item-btn:hover{
     background-color: #d6494d;
 }
-
 .shop-item-btn:active {
     background-color: #b63538;
     box-shadow: inset 0 3px #9b2d30;
@@ -1048,11 +998,9 @@ html{
     text-transform: uppercase;
     margin-right: 10px;
 }
-
 .pages li:last-child {
      width: 140px;
 }
-
 .pages a{
     display: block;
     font-family: "Roboto", "Arial", sans-serif;
@@ -1065,7 +1013,6 @@ html{
     border-radius: 5px;
     padding: 10px 15px;
 }
-
 .pages .active-item-page,
 .pages .active-item-page:hover,
 .pages .active-item-page:active {
@@ -1075,16 +1022,24 @@ html{
     pointer-events: none;
     padding: 8px 14px;
 }
-
 .pages a:hover {
     background-color: #e5e5e5;
 }
-
 .pages a:active {
     background-color: #d5d5d5;
     box-shadow: inset 0 3px #b5b5b5;
 }
 
 
+@keyframes bounce {
+    0% {
+    -webkit-transform: translateY(300px);
+    transform: translateY(300px);
+}  
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
 
     
