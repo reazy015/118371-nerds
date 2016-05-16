@@ -134,7 +134,7 @@
                     Начало-->
       <div class="modal-window">
         <div class="contacts-form clearfix">
-          <div class="esc-button"></div>
+          <div class="modal-window-close"></div>
           <form  class="clearfix" action="someaction.php" method="post">
             <fieldset class="name">
               <legend>Ваше имя:</legend>
@@ -171,11 +171,14 @@
     <script>
       var open = document.querySelector(".write-to-us");
       var modal = document.querySelector(".modal-window");
-      var close = document.querySelector(".esc-button");
+      var close = modal.querySelector(".modal-window-close");
+      var login = modal.querySelector("[name=login]");
         
         open.addEventListener("click", function(event) {
             event.preventDefault();
-            modal.classList.add("modal-window-show");});
+            modal.classList.add("modal-window-show");
+            login.focus();
+        });
         
         close.addEventListener("click", function(event) {
             event.preventDefault();
